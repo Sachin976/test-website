@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+    "jest": true
+  },
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "next/core-web-vitals",
+    "plugin:@next/next/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "tsx": true
+    },
+    "sourceType": "module",
+    "ecmaVersion": 2018
+  },
+  "plugins": [],
+  "rules": {
+    "no-unused-vars": "error",
+    "semi": 2,
+    "no-debugger": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "error"
+        ]
+      }
+    ],
+    "prettier/prettier": 0,
+    "sort-keys": "off"
+  },
+  "settings": {
+    "next": {
+      "version": "detect"
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}

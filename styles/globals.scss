@@ -1,0 +1,100 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Encode Sans', sans-serif;
+  background-color: #FFFAF3;
+}
+
+@layer base {
+  html {
+    font-family: Proxima Nova, system-ui, sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'ADCA';
+  src: url('/src/assets/fonts/ADCA.ttf');
+  src: url('/src/assets/fonts/ADCA.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+.adca{
+  font-family: "ADCA";
+}
+
+
+//gradients
+.twitter{
+  color:#0F9ECD;
+}
+.twitter-button{
+  background: linear-gradient(273.21deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), #33CCFF;
+}
+.instagram{
+  background:linear-gradient(91.47deg, #8D3AAA 3.12%, #EF6F41 21.85%, #E24865 42.92%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.instagram-button{
+  background:linear-gradient(273.21deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(93.03deg, #8D3AAA 0%, #EE6C43 48.3%, #E14668 99.72%);
+}
+.facebook{
+  color:#337FFF;
+}
+.facebook-button{
+  background: linear-gradient(273.21deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), #337FFF;
+}
+.discord{
+  color:#5865F2
+}
+.discord-button{
+  background: linear-gradient(273.21deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), #5865F2;
+}
+.github,.medium{
+  color: black;
+}
+.github-button,.medium-button{
+  background-color: black;
+}
+.linkedin{
+  color:#006699;
+}
+.linkedin-button{
+  background: linear-gradient(273.21deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), #006699;
+}
+.reddit{
+  color:#FF4500;
+}
+.reddit-button,.youtube-button{
+  background:linear-gradient(273.21deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%), #FF4500;
+}
+.youtube{
+  color:#FF3000;
+}

@@ -1,0 +1,19 @@
+.tile-hover{
+    background: transparent;
+    transition: 0.5s;
+  }
+  .tile-hover:hover{
+    color: white;
+    background:linear-gradient(294.79deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100.5%), #FB8E5B;
+    border: none;
+  }
+  .tile-hover:hover .box{
+    background-color: white;
+  }
+  .tile-hover:hover .title{
+    color: white;
+    font-weight: 800;
+  }
+  .tile-hover:hover .load{
+    display: flex;
+  }
