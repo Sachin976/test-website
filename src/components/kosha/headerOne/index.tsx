@@ -84,7 +84,7 @@ const HeaderOne = () => {
                 Community
               </span>
             </Link>
-            <Link className="border-below py-2" href="">
+            <Link className="border-below py-2" href="/contact">
               <span className="uppercase font-semibold text-sm lg:mx-4">
                 Contact us
               </span>
