@@ -7,13 +7,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Encode Sans', sans-serif;
   background-color: #FFFAF3;
 }
 
 @layer base {
   html {
-    font-family: Proxima Nova, system-ui, sans-serif;
+    font-family: 'Encode Sans', sans-serif;
   }
 }
 
