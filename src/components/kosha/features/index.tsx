@@ -26,7 +26,7 @@ const KeyFeatures: FC<IKeyFeatures> = ({ data }) => {
                 <Text className="uppercase mt-[15px] xl:w-[50%] custom-title text-base font-medium">
                   {item.title}
                 </Text>
-                <Typography className="mt-[20px] font-light font-sans text-base text-black opacity-50">
+                <Typography className="mt-[20px] font-light font-sans text-sm text-black opacity-50">
                   {item.detailedExplanation}
                 </Typography>
               </Col>
