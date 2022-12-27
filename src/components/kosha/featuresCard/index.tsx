@@ -2,18 +2,21 @@ import React, { Fragment } from 'react';
 import { list } from './data';
 import { gridCustomCss } from '../../../helpers/commonFunction';
 import Image from 'next/image';
- 
+
 const FeaturesCard = () => {
   return (
     <Fragment>
       <div>
-        <p className="uppercase mt-6 font-[600] text-[23px]  mb-20">Key Features</p>
+        <p className="uppercase mt-6 font-[600] text-[23px]  mb-20">
+          Key Features
+        </p>
       </div>
       <div className="grid justify-items-center md:justify-items-start md:grid-cols-2 lg:grid-cols-3 gap-10">
         {list.map((card: any, idx: number) => {
           let css = gridCustomCss(idx + 1);
           return (
             <div
+              key={idx+20}
               className={`${
                 css ? css : 'lg:justify-self-center'
               }  relative z-1 w-[80%]`}
@@ -45,4 +48,3 @@ const FeaturesCard = () => {
 };
 
 export default FeaturesCard;
-
