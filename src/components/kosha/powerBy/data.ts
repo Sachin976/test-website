@@ -1,6 +1,9 @@
-import { kulptantraDataProps } from './types';
+import { kalptantraDataProps } from './types';
 
-export const KulpTuntraData: kulptantraDataProps[] = [
+export const KalpTuntraData: kalptantraDataProps[] = [
+  {
+    avatar: 'https://i.pravatar.cc/300',
+  },
   {
     avatar: 'https://i.pravatar.cc/300',
   },

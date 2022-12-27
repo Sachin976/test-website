@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html,
 body {
@@ -11,13 +11,18 @@ body {
   background-color: #FFFAF3;
 }
 
-// @font-face {
-//   font-family: 'ADCA';
-//   src: url('/src/assets/fonts/ADCA.ttf');
-//   src: url('/src/assets/fonts/ADCA.ttf');
-//   font-weight: 400;
-//   font-style: normal;
-// }
+@layer base {
+  html {
+    font-family: Proxima Nova, system-ui, sans-serif;
+  }
+}
+
+@font-face {
+  font-family: 'ADCA';
+  src: url('/fonts/ADCA.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
 
 a {
   color: inherit;
@@ -38,8 +43,8 @@ a {
   }
 }
 
-.adca{
-  font-family: "ADCA";
+.adca-font{
+  font-family: 'ADCA';
 }
 
 

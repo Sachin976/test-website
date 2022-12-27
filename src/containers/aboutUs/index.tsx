@@ -11,10 +11,10 @@ function About() {
   return (
     <Fragment>
       <BackgroundImage />
-      <HeaderOne />
+      <HeaderOne page="about"/>
       <main>
         <PageBriefText page="about" />
-        <div className="relative px-8 md:px-13 mb-[5vh] md:mb-[10vh]">
+        <div className="relative px-8 md:px-14 mb-[5vh] md:mb-[10vh]">
           <div>
             <p className="uppercase font-[600] text-[23px]  mb-20">
               Key Features

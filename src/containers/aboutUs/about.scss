@@ -9,7 +9,7 @@
   .border-hover:hover{
     position: absolute;
     max-height:500px;
-    background:linear-gradient(white,white) padding-box, linear-gradient(to right bottom, white, black) border-box;
+    background:linear-gradient(white,white) padding-box, linear-gradient(to right bottom, #FFFAF3, black) border-box;
     border: 1px solid transparent;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   }

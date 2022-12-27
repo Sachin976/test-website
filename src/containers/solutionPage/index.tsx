@@ -10,8 +10,8 @@ const SolutionPage = () => {
   return (
     <Fragment>
       <BackgroundImage />
-      <HeaderOne />
-      <main className="px-8 md:px-13">
+      <HeaderOne page="solution"/>
+      <main className="px-8 md:px-14">
         <PageBriefText page="solution" />
 
         {/* ######################################################USER COMPONENT################################################################################# */}
@@ -61,14 +61,14 @@ function UserCard(props: any) {
   return (
     <>
       <div
-        className={`${props?.css} relative cursor-pointer flex flex-col justify-between border-solid max-w-[450px] lg:max-w-[800px] lg:h-[350px]  border-[1px] rounded-[10px] border-[#A9A9A9] tile-hover`}
+        className={`${props?.css} relative cursor-pointer flex flex-col justify-between border-solid max-w-[450px] lg:max-w-[800px] lg:h-[400px]  border-[1px] rounded-[10px] border-[#A9A9A9] tile-hover`}
       >
         <div>
           <ul className="title text-[#FB8E5B] font-semibold text-2xl lg:text-3xl mb-2">
             <li>{props.title}</li>
           </ul>
           <div className="m-4 max-w-[90%]">
-            <p className="text-md lg:text-xl mt-0">{props.summary}</p>
+            <p className="text-md lg:text-xl mt-0">{props.summary.slice(0,240)}</p>
           </div>
         </div>
         <div className="flex justify-end p-4">

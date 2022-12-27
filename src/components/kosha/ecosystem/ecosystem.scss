@@ -1,0 +1,9 @@
+.tile-shadow {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+    transition: box-shadow 0.5s ease-in-out;
+}
+.tile-shadow:hover {
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+}
+
+//[0px_20px_40px_-10px_#00000024]

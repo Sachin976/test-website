@@ -15,13 +15,13 @@ const CommunityPage = () => {
   return (
     <div>
       <BackgroundImage />
-      <HeaderOne />
+      <HeaderOne page="community"/>
 
       <PageBriefText page="community" />
 
-      <main className="px-8 md:px-12 pb-10">
+      <main className="px-8 md:px-14 pb-10">
         <h3 className="text-[23px]">{data.socialTitle}</h3>
-        <div className="grid justify-items-stretch grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 pt-8">
+        <div className="grid max-md:justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 pt-8">
           {socialMedia.map((media, idx) => {
             let css = gridCustomCss(idx + 1);
             return (
@@ -109,7 +109,7 @@ const CommunityPage = () => {
                     <Image
                       width={200}
                       height={200}
-                      className="block my-2 w-[250px] md:w-[300px]"
+                      className="block my-2 w-[70%] max-w-[400px]"
                       src="/assets/Rectangle.png"
                       alt="rectangle"
                     />

@@ -1,36 +1,35 @@
 import React, { FC } from 'react';
 import { Avatar, Card, Typography } from 'antd';
-import { kulptantraDataProps } from './types';
+import { kalptantraDataProps } from './types';
 
-interface IPoweredByKulptantra {
-  data: kulptantraDataProps[];
+interface IPoweredByKalptantra {
+  data: kalptantraDataProps[];
 }
 
 const { Text } = Typography;
 
-const PoweredByKulptantra: FC<IPoweredByKulptantra> = ({ data }) => {
+const PoweredByKalptantra: FC<IPoweredByKalptantra> = ({ data }) => {
   return (
-    <div className="flex flex-col lg:gap-[88px] gap-[25px]">
-      <Text className="uppercase text-base font-semibold">
-        Powered by KilpTuntra
+    <div className="flex flex-col lg:gap-[70px] gap-[25px]">
+      <Text className="uppercase text-[23px] font-semibold">
+        Powered by Kalptantra
       </Text>
-      <div className="flex flex-col gap-[15px] lg:gap-[74px] lg:flex-row w-full">
-        <Card className="lg:px-[24px] lg:py-[16px] w-full">
-          <div className="flex justify-between">
-            {data.map((item: kulptantraDataProps, key: number) => {
+        <Card className="p-5 box-upper-shadow w-full rounded-xl">
+          <div className="grid grid-cols-2 justify-items-center md:grid-cols-4 lg:grid-cols-8  gap-3">
+            {data.map((item: kalptantraDataProps, key: number) => {
               return (
                 <Avatar
+                  className='cursor-pointer'
                   src={item.avatar}
                   key={key}
-                  size={{ xs: 50, sm: 60, md: 80, lg: 80, xl: 112, xxl: 112 }}
+                  size={90}
                 />
               );
             })}
           </div>
         </Card>
-      </div>
     </div>
   );
 };
 
-export default PoweredByKulptantra;
+export default PoweredByKalptantra;

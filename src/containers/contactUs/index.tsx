@@ -2,13 +2,16 @@ import BackgroundImage from '../../components/kosha/backgroundImage';
 import Footer from '../../components/kosha/footer';
 import HeaderOne from '../../components/kosha/headerOne';
 import PageBriefText from '../../components/kosha/pageBriefText';
+import smiley from '../../assets/icons/smiley.png';
+import { IoSendSharp } from 'react-icons/io5';
+import Image from 'next/image';
 
 export default function ContactPage() {
   return (
     <div>
       <BackgroundImage />
-      <HeaderOne />
-      <PageBriefText page="about" />
+      <HeaderOne  page="contact"/>
+      <PageBriefText page="contact" />
 
       {/* #################################################################################################################################################### */}
       <div className="flex flex-col lg:flex-row lg:gap-x-[5%] px-5 w-full mt-10 mb-10 xl:gap-x-[8%] md:p-20">
@@ -37,11 +40,19 @@ export default function ContactPage() {
                 <div className="bg-[#ed8c59] w-[30%]  h-[30px] md:h-[58px] rounded-l-lg rounded-br-lg"></div>
               </div>
               <div className="bg-white left-0 w-[40%]  h-[30px] md:h-[58px] rounded-r-lg rounded-bl-lg"></div>
-              <input
-                type="text"
-                placeholder="Type your message"
-                className="rounded-lg w-[100%] px-[10px] h-[52px] bottom-0"
-              />
+              <div className="relative w-full">
+                  <input
+                    type="text"
+                    placeholder="Type your message"
+                    className="rounded-lg w-[100%] px-[10px] pr-[70px] h-[52px] bottom-0"
+                  />
+                  <button className="absolute right-10 top-4 border-0 bg-white ">
+                    <Image height={20} width={20} src={smiley} alt="share" />
+                  </button>
+                  <button className="absolute right-2 top-4 border-0 bg-white ">
+                    <IoSendSharp size={21} className="text-[#BE5828]" />
+                  </button>
+                </div>
             </div>
           </div>
         </div>
@@ -92,6 +103,7 @@ export default function ContactPage() {
                     value="General_Inquiry"
                     name="inquiry"
                     className="border-none  bg-[#e0e0e0] "
+                    checked={true}
                   />{' '}General Inquiry
                  </span>
                  <span><input

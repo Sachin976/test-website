@@ -8,7 +8,7 @@ function BackgroundImage() {
       <Image
         src={backgroundImage}
         alt=""
-        className="absolute w-full max-w-[1000px]"
+        className="absolute w-[80vw] h-[80vw] max-w-[1000px] max-h-[1000px]"
       />
     </Fragment>
   );

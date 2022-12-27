@@ -13,7 +13,7 @@ interface IBlogPosts {
 const BlogPosts: FC<IBlogPosts> = ({ data }) => {
   return (
     <div className="flex flex-col sm:gap-[25px] md:gap-[25px]">
-      <Text className="uppercase text-base font-semibold">Blog</Text>
+      <Text className="uppercase text-[23px] font-semibold">Blog</Text>
       <div className="flex flex-col gap-[15px] lg:gap-[74px] lg:flex-row w-full">
         <div className="blogWrapper sm:justify-center flex-row flex flex-wrap gap-[50px]">
           {data.map((item: blogDataProps, index: number) => {
