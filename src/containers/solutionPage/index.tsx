@@ -1,16 +1,23 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import BackgroundImage from '../../components/kosha/backgroundImage';
 import Footer from '../../components/kosha/footer';
 import HeaderOne from '../../components/kosha/headerOne';
 import PageBriefText from '../../components/kosha/pageBriefText';
 import { arr } from './data';
 import { IData } from './type';
+import Modal from '../../components/kosha/modal';
 
 const SolutionPage = () => {
+  const [showModal, setShowModal] = useState(false);
+  const toggel = () => {
+    setShowModal(!showModal);
+  };
+ 
   return (
     <Fragment>
+      {showModal && <Modal toggel={toggel} />}
       <BackgroundImage />
-      <HeaderOne page="solution"/>
+      <HeaderOne page="solution" />
       <main className="px-8 md:px-14">
         <PageBriefText page="solution" />
 
@@ -22,7 +29,7 @@ const SolutionPage = () => {
             if ([2, 4].includes(id + 1)) {
               css = 'lg:justify-self-end';
             }
-            return <UserCard key={id} {...card} css={css} />;
+            return <UserCard key={id} {...card} css={css} toggel={toggel} />;
           })}
         </div>
         {/* #########################################################QUERY COMPONENT############################################################################## */}
@@ -57,18 +64,20 @@ const SolutionPage = () => {
   );
 };
 
-function UserCard(props: any) {
+function UserCard({toggel,css,title,summary}: any) {
   return (
     <>
       <div
-        className={`${props?.css} relative cursor-pointer flex flex-col justify-between border-solid max-w-[450px] lg:max-w-[800px] lg:h-[400px]  border-[1px] rounded-[10px] border-[#A9A9A9] tile-hover`}
+        className={`${css} relative flex flex-col justify-between border-solid max-w-[450px] lg:max-w-[800px] lg:h-[400px]  border-[1px] rounded-[10px] border-[#A9A9A9] tile-hover`}
       >
         <div>
           <ul className="title text-[#FB8E5B] font-semibold text-2xl lg:text-3xl mb-2">
-            <li>{props.title}</li>
+            <li>{title}</li>
           </ul>
           <div className="m-4 max-w-[90%]">
-            <p className="text-md lg:text-xl mt-0">{props.summary.slice(0,240)}</p>
+            <p className="text-md lg:text-xl mt-0">
+              {summary.slice(0,240)}
+            </p>
           </div>
         </div>
         <div className="flex justify-end p-4">
@@ -77,7 +86,9 @@ function UserCard(props: any) {
           </div>
         </div>
         <div className="hidden load justify-center -mb-6">
-          <button className=" uppercase cursor-pointer bg-black text-white font-bold border-0 px-14 py-3 text-lg rounded-lg">
+          <button
+            onClick={() => toggel()}
+            className=" uppercase cursor-pointer bg-black text-white font-bold border-0 px-14 py-3 text-lg rounded-lg">
             Learn more
           </button>
         </div>

@@ -52,7 +52,7 @@ const HeaderOne = ({page}:any) => {
               </span>
             </Link>
           </div>
-          <button className="hidden adca-font lg:block bg-black text-white px-6 py-3 border-0 shadow-[0_16px_20px_-20px_rgba(0,0,0,0.4)] rounded-xl">
+          <button className="hidden adca-font lg:block cursor-pointer bg-black text-white px-6 py-3 border-0 shadow-[0_16px_20px_-20px_rgba(0,0,0,0.4)] rounded-xl">
             #RegulatedByDesign
           </button>
           <Button
@@ -89,7 +89,7 @@ const HeaderOne = ({page}:any) => {
               </span>
             </Link>
             <div className="flex justify-center">
-              <button className="lg:hidden max-w-[200px] bottom-shadow bg-black text-white font-bold px-4 py-3 my-4 border-0 rounded-xl">
+              <button className="lg:hidden max-w-[200px] adca-font cursor-pointer bottom-shadow bg-black text-white font-bold px-4 py-3 my-4 border-0 rounded-xl">
                 #RegulatedByDesign
               </button>
             </div>

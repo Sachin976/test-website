@@ -47,13 +47,13 @@ const Landing = () => {
         <div className="flex w-full mt-[20px] lg:mt-[88px] flex-col">
           <PoweredByKalptantra data={KalpTuntraData} />
         </div>
-        <div className="flex w-full mt-[20px] lg:gap-[68px] lg:mt-[100px] flex-col">
+        <div className="flex w-full mt-20 flex-col">
           <BlogPosts data={BlogCardData} />
         </div>
-        <div className="flex w-full px-[25px] lg:px-[50px] mt-[20px] lg:gap-[68px] lg:mt-[100px] flex-col">
-          <Button className="uppercase bg-[#FEF9F2] font-bold border-black mb-6 h-14 rounded-xl w-full border-2">
-            Open All Blog Post
-          </Button>
+        <div className="flex w-full mt-[20px] lg:gap-[68px] lg:mt-[100px] mb-20 flex-col">
+          <button className="cursor-pointer uppercase adca-font text-[18px] bg-[#FEF9F2] hover:bg-black hover:text-white border-black mb-6 h-14 rounded-xl w-full border-2">
+            Open All Blog Posts
+          </button>
         </div>
       </div>
     </Layout>

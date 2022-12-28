@@ -11,7 +11,8 @@ export const arr: IData[] = [
     title: 'SABHA',
     summary:
       "Similar to a consumer forum, Sabha is a grievance layer engineered to protect the stakeholder’s interest. The sole purpose of Sabha is to take care of any kind of grievances, eventually making the framework even more secure and trustworthy.",
-  },
+    
+    },
   {
     title: 'SADAN',
     summary:
