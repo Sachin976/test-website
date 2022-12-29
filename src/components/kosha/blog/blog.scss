@@ -1,0 +1,12 @@
+.gradient-box {
+    width: 100%;
+    background: rgba(20,23,45,0.25);
+    border: 1px solid #0f0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border-image-slice: 12; /* border-radius*2 */
+    border-image-repeat: none;
+    border-image-width: 1px; /* border-radius*2 */
+    border-image-source: linear-gradient(148deg, rgba(255,255,255,1) 22%, rgba(0,0,0,0) 52%);
+}
+

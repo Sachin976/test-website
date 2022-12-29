@@ -14,6 +14,21 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+.outer-circle{
+    position: absolute; 
+    z-index: 1;
+    top: 10px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 110vw;
+    height: 40vw;
+    max-width: 1350px;
+    max-height: 530px;
+    object-fit: cover;
+    transform: rotate(3deg);
+}
 @keyframes move {
     100%  {transform: rotate(360deg);}
 }

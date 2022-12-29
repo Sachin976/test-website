@@ -1,19 +1,32 @@
-.tile-hover{
-    background: transparent;
-    transition: 0.5s;
-  }
-  .tile-hover:hover{
-    color: white;
-    background:linear-gradient(294.79deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100.5%), #FB8E5B;
-    border: none;
-  }
-  .tile-hover:hover .box{
-    background-color: white;
-  }
-  .tile-hover:hover .title{
-    color: white;
-    font-weight: 800;
-  }
-  .tile-hover:hover .load{
-    display: flex;
-  }
+.tile-hover {
+  background: transparent;
+  transition: 0.5s;
+}
+.tile-hover:hover {
+  color: white;
+  background: linear-gradient(
+      294.79deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100.5%
+    ),
+    #fb8e5b;
+  border: none;
+  box-shadow: 0px 34px 29px -14px rgba(130, 48, 10, 0.22);
+}
+.tile-hover:hover .box {
+  background-color: white;
+}
+.tile-hover:hover .title {
+  color: white;
+  font-weight: 800;
+}
+.tile-hover:hover .load {
+  display: flex;
+}
+.tile-hover:hover .load button {
+  box-shadow: 0px 21px 15px -14px rgba(0, 0, 0, 0.25);
+}
+
+.modal::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

@@ -15,7 +15,7 @@ const CommunityPage = () => {
   return (
     <div>
       <BackgroundImage />
-      <HeaderOne page="community"/>
+      <HeaderOne page="community" />
 
       <PageBriefText page="community" />
 
@@ -29,7 +29,7 @@ const CommunityPage = () => {
                 key={idx}
                 className={`${
                   css ? css : 'lg:justify-self-center'
-                } relative flex max-w-[265px]`}
+                } relative flex max-w-[280px]`}
               >
                 <div className="grid place-items-center bg-white  mr-5  shadow-[0_16px_20px_-20px_rgba(0,0,0,0.4)] min-h-[100px] min-w-[100px]  rounded-lg">
                   <Image
@@ -42,7 +42,7 @@ const CommunityPage = () => {
                 <div className="flex flex-col justify-between">
                   <p className="uppercase font-semibold text-[17px] mb-5">
                     {media.action}{' '}
-                    <span className={media.name}>{media.name}</span>
+                    <span className={media.name}>{media.text}</span>
                   </p>
                   <button
                     onClick={() => window.open(media.url, '_blank')}
@@ -62,7 +62,7 @@ const CommunityPage = () => {
               {data.ongoing}
             </p>
             {ongoing.map((value, idx) => (
-              <EventCard key={idx+214} value={value} id={idx} />
+              <EventCard key={idx + 214} value={value} id={idx} />
             ))}
           </div>
           <div className="lg:pl-10 max-w-full min-w-[250px] lg:w-3/6 mt-10 md:mt-0">
@@ -70,7 +70,7 @@ const CommunityPage = () => {
               {data.upcoming}
             </p>
             {upcoming.map((value, idx) => (
-              <EventCard key={idx +2} value={value} id={idx} />
+              <EventCard key={idx + 2} value={value} id={idx} />
             ))}
           </div>
         </div>
@@ -80,7 +80,7 @@ const CommunityPage = () => {
         <div className="mb-20">
           <div className="flex flex-col lg:items-center lg:flex-row gap-[10%]">
             <div className="flex flex-col md:flex-row lg:w-[50%] mr-6  items-center">
-              <div className=" relative flex flex-col md:flex-row max-w-[800px]">
+              <div className=" relative flex flex-col md:flex-row max-w-[650px]">
                 <div className="bg-white w-[60px] h-[50px] rounded-[50%] sm:mr-5 grid place-items-center p-2 mb-4">
                   <Image
                     width={30}
@@ -98,21 +98,21 @@ const CommunityPage = () => {
                     src="/assets/verify.svg"
                     alt="verify tag"
                   />
-                  <div className="mt-5 p-3 border-solid border-[1px] border-black border-opacity-[0.3] bg-white rounded-lg">
+                  <div className="mt-5 p-6 border-solid border-[1px] border-black border-opacity-[0.3] bg-white rounded-lg">
                     <span className="opacity-[0.5] font-medium">Reposted</span>
-                    <p className="my-2 font-medium max-w-[92%]">
+                    <p className="my-2 font-medium max-w-[100%]">
                       {data.description}
                     </p>
                     <span className="text-[#BE5828] font-medium">
                       Read more
                     </span>
-                    <Image
+                      <Image
                       width={200}
                       height={200}
-                      className="block my-2 w-[70%] max-w-[400px]"
-                      src="/assets/Rectangle.png"
-                      alt="rectangle"
-                    />
+                        className="block my-2 w-full h-fit"
+                        src="/assets/Rectangle.png"
+                        alt="rectangle"
+                      />
                     <p className="font-medium mb-0">Video title</p>
                     <Image
                       width={50}
@@ -162,15 +162,15 @@ const CommunityPage = () => {
               </div>
             </div>
             <div className=" lg:w-[50%]">
-              <div className="h-[500px] w-80% lg:w-[400px] xl:w-[600px] mt-20 lg:mt-0 bg-black rounded-lg p-[10px] flex  flex-col justify-between ">
-                <div className="bg-[#BE5828] text-white font-[400] text-[24px] px-[4%] py-[1%] rounded-lg">
+              <div className="h-[500px] w-80% lg:w-[400px] xl:w-[500px] mt-20 lg:mt-0 bg-black rounded-lg p-[1px] flex  flex-col justify-between ">
+                <div className="bg-[#BE5828] adca-font text-white font-[400] text-[23px] p-5 rounded-md">
                   Online Chat
                 </div>
-                <div className="relative w-full">
+                <div className="relative m-4">
                   <input
                     type="text"
                     placeholder="Type your message"
-                    className="rounded-lg w-[100%] px-[10px] pr-[70px] h-[52px] bottom-0"
+                    className="rounded-lg w-[100%] px-[10px] pr-[70px] h-[52px] bottom-0 border-0"
                   />
                   <button className="absolute right-10 top-4 border-0 bg-white ">
                     <Image height={20} width={20} src={smiley} alt="share" />

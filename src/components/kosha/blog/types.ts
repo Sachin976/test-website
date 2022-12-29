@@ -5,4 +5,5 @@ export type blogDataProps = {
   author: string;
   description: string;
   images?: any;
+  link:string
 }

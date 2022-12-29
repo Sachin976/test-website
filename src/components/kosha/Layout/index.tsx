@@ -3,15 +3,13 @@ import React from 'react';
 import HeaderOne from '../headerOne';
 import Image from 'next/image';
 import circleImage from '../../../assets/image/circleImage.png';
+import outerCircle from '../../../assets/image/outer-circle.svg';
 
 const Layout = ({ children }: any) => {
   return (
     <>
-      <Image
-        src={circleImage}
-        alt=""
-        className="absolute left-[25%] -mt-10 circle-rotate"
-      />
+      <Image src={outerCircle} alt="" className="outer-circle max-2xl:hidden" />
+      <Image src={circleImage} alt="" className="-mt-[4rem] circle-rotate" />
       <HeaderOne page="home" />
       {children}
       <Footer />

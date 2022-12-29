@@ -7,7 +7,7 @@ const HeaderOne = ({page}:any) => {
   const [showMobileDropdown, setShowMobileDropdown] = useState(false);
   return (
     <header className="flex">
-      <div className="w-full z-[5] lg:px-14 bg-white lg:bg-opacity-0 relative py-5 mb-10 md:mb-20">
+      <div className="w-full z-[5] lg:px-14 bg-white lg:bg-opacity-0 relative py-10 mb-10 md:mb-[3.0rem]">
         <div
           className={`${
             showMobileDropdown && 'border-below pb-4 bottom-shadow'} lg:shadow-none relative z-10 flex justify-between items-center px-8 md:max-lg:px-14 lg:px-0`}
@@ -30,29 +30,29 @@ const HeaderOne = ({page}:any) => {
               />
             </Link>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:block ml-[1.5rem]">
             <Link href="/solution">
-              <span className={`uppercase ${page == 'solution'?'active-link':'font-semibold'} text-sm mx-4`}>
+              <span className={`uppercase ${page == 'solution'?'active-link':'font-semibold'} text-sm mx-3`}>
                 Solutions
               </span>
             </Link>
             <Link href="/about">
-              <span className={`uppercase ${page == 'about'?'active-link':'font-semibold'} text-sm mx-4`}>
+              <span className={`uppercase ${page == 'about'?'active-link':'font-semibold'} text-sm mx-3`}>
                 About kalptantra
               </span>
             </Link>
             <Link href="/community">
-              <span className={`uppercase ${page == 'community'?'active-link':'font-semibold'} text-sm mx-4`}>
+              <span className={`uppercase ${page == 'community'?'active-link':'font-semibold'} text-sm mx-3`}>
                 Community
               </span>
             </Link>
             <Link href="/contact">
-              <span className={`uppercase ${page == 'contact'?'active-link':'font-semibold'} text-sm mx-4`}>
+              <span className={`uppercase ${page == 'contact'?'active-link':'font-semibold'} text-sm mx-3`}>
                 Contact us
               </span>
             </Link>
           </div>
-          <button className="hidden adca-font lg:block cursor-pointer bg-black text-white px-6 py-3 border-0 shadow-[0_16px_20px_-20px_rgba(0,0,0,0.4)] rounded-xl">
+          <button className="hidden adca-font font-normal text-[14px] lg:block cursor-pointer bg-black text-white px-6 py-3 border-0 button-shadow rounded-xl">
             #RegulatedByDesign
           </button>
           <Button

@@ -1,6 +1,6 @@
-import { featureData } from './type';
+// import { featureData } from './type';
 
-export const list: featureData[] = [
+export const list: any = [
   {
     title: 'Regulated by design?',
     image: '/assets/about/1.jpg',

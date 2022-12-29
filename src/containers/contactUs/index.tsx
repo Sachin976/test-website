@@ -15,8 +15,8 @@ export default function ContactPage() {
 
       {/* #################################################################################################################################################### */}
       <div className="flex flex-col lg:flex-row lg:gap-x-[5%] px-5 w-full mt-10 mb-10 xl:gap-x-[10%] md:p-20">
-        <div className="bg-[#be5829] rounded-lg p-3 md:p-5 max-w-[491px]">
-          <div className="text-white">
+        <div className="bg-[#be5829] rounded-lg p-3 md:p-5 max-w-[491px] relative">
+          <div className="text-white flex flex-col gap-[16px]">
             <p className="text-[28px] font-[700] ">
               Send us message and we’ll get back to you ASAP!
             </p>
@@ -26,15 +26,15 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="bg-black rounded-lg p-4">
-            <div className="flex px-3 justify-between">
+          <div className="bg-black rounded-lg mt-[20px]">
+            <div className="flex justify-between px-6 py-5 mt-5" >
               <p className="font-[500] text-[15px] text-white">
                 {' '}
                 We typically reply within 5 minutes{' '}
               </p>
               <p className="text-[#00B05C] font-[700] text-[15px]"> Online </p>
             </div>
-            <hr className='border-[#2c2c2c]' />
+            <hr className='border-[#2c2c2c] m-0' />
             <div className="flex flex-col justify-between p-3 gap-y-[10px] ">
               <div className="flex  flex-col w-full gap-y-[10px] items-end">
                 <div className="bg-[#ed8c59]  w-[50%]  h-[40px] md:h-[77px]  rounded-l-2xl rounded-br-2xl "></div>
@@ -45,7 +45,7 @@ export default function ContactPage() {
                 <input
                   type="text"
                   placeholder="Type your message"
-                  className="rounded-lg w-[100%] px-[10px] pr-[70px] h-[52px] bottom-0"
+                  className="rounded-lg w-[100%] px-[10px] pr-[70px] h-[52px] bottom-0 border-0 mt-1"
                 />
                 <button className="absolute right-10 top-4 border-0 bg-white ">
                   <Image height={20} width={20} src={smiley} alt="share" />
@@ -57,7 +57,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        <div className="mt-10">
+        <div className=" relative mt-10">
 
           <form action="" className="font-[500] text-l ">
 
@@ -118,7 +118,7 @@ export default function ContactPage() {
                     type="radio"
                     value="General_Inquiry"
                     name="inquiry"
-                    className="border-none  bg-[#e0e0e0] "
+                    className="radio-btn bg-[#e0e0e0] "
                   />{' '}General Inquiry
                   </span>
                   <span><input
@@ -140,7 +140,7 @@ export default function ContactPage() {
                 />
               </div>
               <div className="relative">
-                <button className="absolute right-0 bg-black text-white font-[600]  text-[12px] md:text-[16px] border-none adca-font rounded-lg  w-[130px] md:w-[187px] h-[35px] md:h-[35px]">
+                <button className="absolute right-0 bg-black text-white font-[600]  text-[12px] md:text-[16px] adca-font rounded-lg  w-[130px] md:w-[187px] h-[35px] md:h-[35px]">
                   Send Message
                 </button>
               </div>
