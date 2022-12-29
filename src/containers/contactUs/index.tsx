@@ -79,7 +79,7 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row justify-between  sm:gap-y-5">
+              <div className="flex flex-col md:flex-row justify-between md:gap-x-10 sm:gap-y-5">
                 <div className="flex flex-col gap-3">
                   <label>Email</label>
                   <input
@@ -140,7 +140,7 @@ export default function ContactPage() {
                 />
               </div>
               <div className="relative">
-                <button className="absolute right-0 bg-black text-white font-[600]  text-[12px] md:text-[16px] adca-font rounded-lg  w-[130px] md:w-[187px] h-[35px] md:h-[35px]">
+                <button className="absolute right-0 bg-black text-white font-[400]  border-0 text-[12px] md:text-[16px] adca-font rounded-lg  w-[130px] md:w-[190px] h-[35px] md:h-[35px]">
                   Send Message
                 </button>
               </div>

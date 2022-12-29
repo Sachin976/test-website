@@ -27,7 +27,7 @@ export default function Modal({modalData,toggle}: any) {
             </div>
           </div>
           <div>
-            <p className="text-[#BE5828]  text-[18px] md:text-[23px]">{modalData?.description}</p>
+            <p className="text-[#BE5828]  text-[18px] md:text-[23px]" dangerouslySetInnerHTML={{__html:modalData?.description}}></p>
           </div>
           <div className="p-10%">
             <Image

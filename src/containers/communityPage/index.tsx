@@ -57,7 +57,7 @@ const CommunityPage = () => {
         </div>
         <h3 className="uppercase pt-10 pb-5 text-[23px]">{data.event}</h3>
         <div className="flex flex-col items-center lg:flex-row w-full">
-          <div className="lg:w-3/6 max-w-full min-w-[250px] border-solid border-0 lg:border-r-[1px] border-opacity-[0.3] border-black">
+          <div className="lg:w-3/6 max-w-full min-w-[250px] border-solid border-0 lg:border-r-[2px] border-opacity-[0.3] border-black">
             <p className="uppercase font-medium text-center mb-4">
               {data.ongoing}
             </p>
@@ -142,7 +142,7 @@ const CommunityPage = () => {
                         />
                       </div>
                     </div>
-                    <div className="bg-[#FADDCB] flex items-center h-[25.25px] rounded-lg text-center p-2">
+                    <div className="cursor-pointer bg-[#FADDCB] flex items-center h-[25.25px] rounded-lg text-center p-2">
                       <span className="mr-2">34</span>
                       <Image
                         width={20}
@@ -156,7 +156,7 @@ const CommunityPage = () => {
                 </div>
               </div>
               <div>
-                <div className="bg-[#BE5828] mt-3 md:mt-0 mx-2 grid place-items-center max-w-[40px] p-2 rounded-xl">
+                <div className="cursor-pointer bg-[#BE5828] mt-3 md:mt-0 mx-2 grid place-items-center max-w-[40px] p-2 rounded-xl">
                   <Image height={20} width={20} src={sharePng} alt="share" />
                 </div>
               </div>

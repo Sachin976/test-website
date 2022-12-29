@@ -50,13 +50,12 @@ const SolutionPage = () => {
               <label>Your Email</label>
               <input
                 type="email"
-                className="bg-[#D0D0D0] w-full h-[58px] border-0 rounded-xl mt-3 mb-5"
+                className="bg-[#D0D0D0] w-full h-[58px] border-0 rounded-xl mt-3 mb-5 text-[24px] p-5"
               />
               <label>Your message</label>
-              <input
-                type="textbox"
-                className="bg-[#D0D0D0] w-full h-[260px] border-0 rounded-xl mt-3"
-              />
+              <textarea
+                className="bg-[#D0D0D0] w-full h-[260px] border-0 rounded-xl mt-3 text-[24px] p-5"
+              ></textarea>
             </form>
             <button className=" text-white adca-font light-shadow cursor-pointer bg-black text-[22px] font-normal h-[52px] w-full border rounded-[10px] mt-10">
               SUBMIT
@@ -69,7 +68,7 @@ const SolutionPage = () => {
   );
 };
 
-function UserCard({ openModal, css, title, summary }: any) {
+function UserCard({ openModal, css, title, summary,description }: any) {
   return (
     <>
       <div
@@ -90,7 +89,7 @@ function UserCard({ openModal, css, title, summary }: any) {
         </div>
         <div className="hidden load justify-center -mb-6">
           <button
-            onClick={() => openModal(title, summary)}
+            onClick={() => openModal(title, description)}
             className=" uppercase cursor-pointer bg-black text-white font-bold border-0 px-14 py-3 text-lg rounded-lg"
           >
             Learn more
