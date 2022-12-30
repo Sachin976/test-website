@@ -8,12 +8,14 @@ export const EventCard = ({ value, id }: any) => {
       key={id}
       className="flex w-full event-style justify-start items-center mb-5"
     >
-      <div className="flex p-8 inner-box justify-start w-full md:w-4/6  items-center border-solid border-[1px] border-opacity-[0.5] border-black rounded-lg">
+      <div className="flex flex-col md:flex-row p-8 inner-box justify-center w-full md:w-4/6  items-start md:justify-start md:items-center border-solid border-[1px] border-opacity-[0.5] border-black rounded-lg">
+        <div className='flex '>
         <Image
           width={55}
           height={55}
           src="/assets/kalptantra-bg-black.png"
           alt="Kalptantra logo"
+          className='max-md:w-[40px] max-md:h-[40px]'
         />
         <div className="ml-6">
           <span className="text-[#BE5828] text-md font-semibold">
@@ -27,6 +29,7 @@ export const EventCard = ({ value, id }: any) => {
               <li>Online now</li>
             </ul>
           )}
+        </div>
         </div>{' '}
         <div className="hidden description text-[10px] ml-4">
           <ul><li>{value?.description}</li></ul>

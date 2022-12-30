@@ -57,7 +57,7 @@ const CommunityPage = () => {
         </div>
         <h3 className="uppercase pt-10 pb-5 text-[23px]">{data.event}</h3>
         <div className="flex flex-col items-center lg:flex-row w-full">
-          <div className="lg:w-3/6 max-w-full min-w-[250px] border-solid border-0 lg:border-r-[2px] border-opacity-[0.3] border-black">
+          <div className="lg:w-3/6 w-[90%] max-w-full border-solid border-0 lg:border-r-[2px] border-opacity-[0.3] border-black">
             <p className="uppercase font-medium text-center mb-4">
               {data.ongoing}
             </p>
@@ -65,7 +65,7 @@ const CommunityPage = () => {
               <EventCard key={idx + 214} value={value} id={idx} />
             ))}
           </div>
-          <div className="lg:pl-10 max-w-full min-w-[250px] lg:w-3/6 mt-10 md:mt-0">
+          <div className="lg:pl-10 w-[90%] max-w-full lg:w-3/6 mt-10 md:mt-0">
             <p className="uppercase font-medium text-center mb-5">
               {data.upcoming}
             </p>

@@ -7,10 +7,10 @@ const HeaderOne = ({page}:any) => {
   const [showMobileDropdown, setShowMobileDropdown] = useState(false);
   return (
     <header className="flex">
-      <div className="w-full z-[5] lg:px-14 bg-white lg:bg-opacity-0 relative py-10 mb-10 md:mb-[3.0rem]">
+      <div className="w-full z-[12] lg:px-14 bg-white lg:bg-opacity-0 relative py-5 lg:py-10 mb-10 md:mb-[3.0rem]">
         <div
           className={`${
-            showMobileDropdown && 'border-below pb-4 bottom-shadow'} lg:shadow-none relative z-10 flex justify-between items-center px-8 md:max-lg:px-14 lg:px-0`}
+            showMobileDropdown && 'border-below pb-4 bottom-shadow'} lg:shadow-none relative z-[12] flex justify-between items-center px-8 md:max-lg:px-14 lg:px-0`}
         >
           <div className="flex items-center">
             <Image
@@ -67,7 +67,7 @@ const HeaderOne = ({page}:any) => {
           </Button>
         </div>
         {showMobileDropdown && (
-          <div className="lg:hidden w-[100%] absolute z-[3] left-0 px-14 md:px-20 bg-white flex flex-col">
+          <div className="lg:hidden w-[100%] absolute z-[11] left-0 px-14 md:px-20 bg-white flex flex-col">
             <Link className="border-below py-2" href="/solution">
               <span className="uppercase font-semibold text-sm lg:mx-4 ">
                 Solutions
