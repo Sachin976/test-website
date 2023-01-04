@@ -12,7 +12,7 @@ const PageBriefText = ({ page = '' }: any) => {
         {data[page]?.description}
       </p>}
       {page == 'home' && <button className='uppercase z-[4] adca-font cursor-pointer mt-10 bg-black text-white text-[14px] px-6 py-3 border-0  md:shadow-[-80px_50px_80px_200px_rgba(254,249,242)] rounded-xl'>
-        explore us more</button>}
+        explore  more</button>}
     </div>
   );
 };

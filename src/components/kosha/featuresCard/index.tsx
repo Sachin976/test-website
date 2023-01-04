@@ -27,12 +27,12 @@ const FeaturesCard = () => {
                   <p className="uppercase font-medium text-[15px] my-3">
                     {card.title}
                   </p>
-                  <p className="font-light my-3 summary  text-xs opacity-[0.5]">
+                  <p className="font-light my-3 summary  text-xs opacity-[0.7]">
                     {card.summary?.length > 200
                       ? card.summary?.slice(0, 200) + ' ...'
                       : card.summary}
                   </p>
-                  <p className="hidden font-light mt-3 description text-xs opacity-[0.5]">
+                  <p className="hidden font-light mt-3 description text-xs opacity-[0.8]">
                     {card.summary}
                   </p>
                 </div>

@@ -5,17 +5,17 @@ export const data: any = {
   about: {
     title: 'Get to know us better!',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "Kalptantra is an authorized blockchain built on the Hyperledger Fabric, where nodes are known and certified by a reputed certifying authority. However, being a permissioned blockchain doesn’t mean gatekeepers guard Kalptantra. Anyone can participate in this ecosystem if they are willing to verify themselves through a KYC process. ",
   },
   community: {
     title: 'get engaged with us!',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      " Be a part of our Kalptantra community that offers a destination for our members to gather, communicate, and build relationships with each other. ",
   },
   contact: {
     title: 'Want to talk with us?',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+      "Please get in touch, and our expert support team will answer all your questions.",
   },
   home: {
     tag1:"The most compliant blockchain in the world",

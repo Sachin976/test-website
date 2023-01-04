@@ -18,7 +18,7 @@ export default function ContactPage() {
         <div className="bg-[#be5829] rounded-lg p-3 md:p-5 max-w-[491px] relative">
           <div className="text-white flex flex-col gap-[16px]">
             <p className="text-[28px] font-[700] ">
-              Send us message and we’ll get back to you ASAP!
+              Send us a message and we’ll get back to you ASAP!
             </p>
             <p className="text-[18px] font-[400]">Or</p>
             <p className="text-[18px] font-[400]">

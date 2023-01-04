@@ -12,7 +12,7 @@ const FutureCard: FC<IFutureCard> = ({ data }) => {
       <p className="uppercase text-[23px] font-semibold">
         Fueling the Kalptantra Ecosystem:
       </p>
-      <div className="grid bg-transparent md:grid-cols-2 xl:grid-cols-3 gap-[15px] lg:gap-[74px] lg:flex-row w-full">
+      <div className="grid bg-transparent md:grid-cols-2  gap-[15px] lg:gap-[74px] lg:flex-row w-full">
         {data.map((item: ecosystemDataProps, key: number) => {
           return (
             <div key={key} className='flex border-solid border-black border-[1px] border-opacity-[0.4] p-5 items-start rounded-xl tile-shadow'>
@@ -24,7 +24,7 @@ const FutureCard: FC<IFutureCard> = ({ data }) => {
               </div>
               <div>
                 <p className='text-md font-medium mb-1'>{item.title}</p>
-                <p className='text-sm font-light leading-[1.3]'>{item.description}</p>
+                <p className='text-sm font-light leading-[1.3]'>{item.description.slice(0,280)}</p>
               </div>
               {/* <Card key={key} className="bg-[#FFFAF3] border-black  border-opacity-[0.5] w-full tile-shadow">
               <Meta
