@@ -7,8 +7,7 @@ const Footer: FC = () => {
         <div className="max-w-[360px] md:mr-20 lg:mr-28 mb-10">
           <h2 className="uppercase adca-font m-0 font-normal mb-8 text-[30px]">We&#39;ll Keep you posted</h2>
           <p className="text-[#FFFFFF] text-[17px] mb-10">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&#39;s
+          Don't miss out! Get the latest Kalptantra updates straight to your inbox.
           </p>
           <input
             placeholder="Your e-mail address"
